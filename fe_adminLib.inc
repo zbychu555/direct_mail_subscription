@@ -1465,7 +1465,7 @@ class user_feAdmin	{
 
 				//get PID recursively
 				if ($this->conf["pidRecursive"]) {
-					$pidLock = "AND pid IN (".$this->cObj->getTreeList($this->thePid,100).$this->thePid.")";
+					$pidLock = "AND pid IN (".$this->cObj->getTreeList($this->thePid,100).','.$this->thePid.")";
 				}
 
 					// Getting records
